@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Human–AI Co-Validation Prototype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0; padding: 0;
+        }
+        .container {
+            width: 420px;
+            margin: 60px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 14px;
+            padding: 8px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1e88e5;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Human–AI Co-Validation</h2>
+    <form action="/process" method="post">
+        <label>Patient Clinical Notes :</label>
+        <textarea name="notes" rows="6" required></textarea>
+
+        <button type="submit">Run Co-Validation</button>
+    </form>
+</div>
+
+</body>
+</html>

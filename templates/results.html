@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f5;
+            margin: 0; padding: 0;
+        }
+        .box {
+            width: 550px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            line-height: 1.6;
+        }
+        .flag-ok {
+            color: green;
+            font-weight: bold;
+        }
+        .flag-bad {
+            color: red;
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>✅ Co-Validation Result</h3>
+
+        <div class="section">
+            <strong>AI Draft:</strong>
+            <p>{{ draft }}</p>
+        </div>
+
+        <div class="section">
+            <strong>Human Rule Check:</strong>
+            {% if warning %}
+                <span class="flag-bad">{{ warning }}</span>
+            {% else %}
+                <span class="flag-ok">No critical issue detected</span>
+            {% endif %}
+        </div>
+
+        <a href="/">← Try another input</a>
+    </div>
+</body>
+</html>
+
