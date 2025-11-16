@@ -30,4 +30,5 @@ LLMs are useful in healthcare but can generate convincing yet incorrect informat
 ## ▶️ Run the project locally
 
 1. Clone the repository:
+![Interface Screenshot](interface.png)
 
